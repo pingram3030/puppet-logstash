@@ -41,7 +41,6 @@ class logstash::service {
     '-XX:+HeapDumpOnOutOfMemoryError',
     '-XX:+UseCMSInitiatingOccupancyOnly',
     '-XX:+UseConcMarkSweepGC',
-    '-XX:+UseParNewGC',
   ]
 
   $settings = merge($default_settings, $logstash::settings)
